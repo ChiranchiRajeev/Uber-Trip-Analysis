@@ -37,7 +37,7 @@ test_percentage = st.sidebar.slider("📈 Test Data Size (%)", 10, 40, 20, 5, he
 def load_and_prepare_data(file_path):
     st.info("⏳ Loading your Uber trip data...")
     try:
-        df = pd.read_csv(r"C:\Users\pc\OneDrive\Documents\cip 2025\Data Analyst\uber\Uber-Jan-Feb-FOIL.csv")
+        df = pd.read_csv("Uber-Jan-Feb-FOIL.csv")
     except FileNotFoundError:
         st.error("⚠️ File not found! Check the path and try again.")
         return None
